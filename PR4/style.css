@@ -1,0 +1,149 @@
+.circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: red;
+}
+.square {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+}
+.rectangle {
+    width: 200px;
+    height: 100px;
+    background-color: green;
+}
+.oval {
+    width: 150px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: teal;
+}
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid red;
+}
+.triangle-down {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 100px solid green;
+}
+.triangle-left {
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-right: 100px solid blue;
+    border-bottom: 50px solid transparent;
+}
+.triangle-right {
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-left: 100px solid red;
+    border-bottom: 50px solid transparent;
+}
+.diamond {
+    width: 100px;
+    height: 100px;
+    background-color: purple;
+    position: relative;
+    transform: rotate(45deg);
+}
+.trapezoid {
+    width: 200px;
+    height: 100px;
+    border-bottom: 100px solid blue;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+}
+.parallelogram {
+    width: 200px;
+    height: 100px;
+    transform: skew(30deg);
+    background-color: green;
+}
+.pentagon {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    background-color: yellow;
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+}
+.heart {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    background-color: red;
+    transform: rotate(-45deg);
+}
+
+.heart:before,
+.heart:after {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+.heart:before {
+    top: 0;
+    left: 50px;
+    border-top-left-radius: 50px 50px;
+    border-top-right-radius: 50px 50px;
+}
+
+.heart:after {
+    top: -50px;
+    left: 0;
+    border-bottom-left-radius: 50px 50px;
+    border-bottom-right-radius: 50px 50px;
+}
+.pacman {
+    width: 0;
+    height: 0;
+    border-right: 50px solid yellow;
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+    border-radius: 50%;
+    position: relative;
+}
+
+.mouth {
+    width: 0;
+    height: 0;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    border-left: 25px solid yellow;
+    border-radius: 0 50% 50% 0;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.outer-circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #3498db;
+    position: relative;
+}
+
+.inner-circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #fbff00;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
