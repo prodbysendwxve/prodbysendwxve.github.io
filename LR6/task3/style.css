@@ -1,0 +1,39 @@
+.fullwrap {
+   
+    margin-left: 35%;
+    margin-right: 35%;
+    margin-top: 10%;
+    background: #ddd; 
+    .header, .footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px 0;
+
+  }
+  .wrap {
+
+    width: 90%;
+    margin: 0 auto; 
+    background: #fff; 
+    
+  }
+  .sidebar {
+
+    
+    width: 70%;
+    float: left; 
+    background: #ccc;
+    height: 300px; 
+
+
+
+  }
+
+  .main {
+    margin-left: 25%; 
+
+    background: #eee; 
+    height: 300px;
+
+  }
+
